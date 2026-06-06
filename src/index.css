@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Poppins", sans-serif;
+  --font-mono: "Poppins", monospace;
+
+  --font-weight-light: 400;
+  --font-weight-normal: 400;
+  --font-weight-medium: 400;
+  --font-weight-semibold: 400;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 700;
+  --font-weight-black: 700;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 12px)); }
+}
+
+@utility animate-marquee-x {
+  animation: marquee 35s linear infinite;
+}
+
+@keyframes wave-flag {
+  0%, 100% { transform: translateY(0) rotate(-3deg); }
+  50% { transform: translateY(4px) rotate(3deg); }
+}
+
+@utility animate-wave-flag {
+  animation: wave-flag 2.5s ease-in-out infinite;
+}
+
+@keyframes pulse-cta {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
+
+@utility animate-pulse-cta {
+  animation: pulse-cta 2s infinite ease-in-out;
+}
+

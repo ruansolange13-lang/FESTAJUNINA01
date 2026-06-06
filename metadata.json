@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Kit Arraiá Premiado",
+  "description": "Página de vendas de alta conversão para o Kit Arraiá Premiado, uma coletânea de dinâmicas juninas prontas para animar sua festa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
