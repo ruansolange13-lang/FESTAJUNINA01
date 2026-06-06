@@ -31,18 +31,24 @@ import UpsellModal from './components/UpsellModal';
 import VSLPlayer from './components/VSLPlayer';
 
 // Import local generated images
-import avatarProfessora from './assets/images/avatar_professora_nova.jpg';
-const mockupPremium = 'https://i.imgur.com/WELMJhy.jpeg';
-import seloGarantia from './assets/images/selo_garantia_7_dias_novo.png';
+import avatarProfessora from './assets/images/avatar_professora_1780095735123.webp';
+import mockupPremium from './assets/images/mockup_premium_1780095770029.webp';
+import seloGarantia from './assets/images/selo_garantia_7_dias_1780557360039.webp';
+
+import testimonial1 from './assets/images/testimonial_1.webp';
+import testimonial2 from './assets/images/testimonial_2.webp';
+import testimonial3 from './assets/images/testimonial_3.webp';
+import testimonial4 from './assets/images/testimonial_4.webp';
+import testimonial5 from './assets/images/testimonial_5.webp';
 
 const flagColors = ['#e74c3c', '#f1c40f', '#3498db', '#2ecc71', '#e67e22', '#9b59b6'];
 
 const testimonialImages = [
-  'https://i.postimg.cc/50JMbCMF/1.webp',
-  'https://i.postimg.cc/sXzRshRS/2.webp',
-  'https://i.postimg.cc/cHWN0nNn/3.webp',
-  'https://i.postimg.cc/TwxXfDX5/4.webp',
-  'https://i.postimg.cc/MTw8qQ8M/5.webp',
+  testimonial1,
+  testimonial2,
+  testimonial3,
+  testimonial4,
+  testimonial5,
 ];
 
 export default function App() {
@@ -648,8 +654,8 @@ export default function App() {
           </h2>
         </div>
 
-        {/* Pricing Layout Container - Centered Single Plan Card */}
-        <div className="max-w-md mx-auto px-4 mb-2">
+        {/* Pricing Layout Container - Stacked on Mobile, Two Columns on Desktop */}
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto px-4 mb-2">
           
           {/* Plano Essencial */}
           <div className="bg-white rounded-[2rem] p-6 sm:p-8 md:p-10 border-2 border-orange-100 shadow-2xl flex flex-col justify-between text-center relative mt-5 transition-transform duration-300 hover:scale-[1.01]">
@@ -671,8 +677,8 @@ export default function App() {
                   10,00
                 </span>
               </div>
-              <p className="text-xs text-[#5d4037] mb-6 font-medium">
-                PAGAMENTO ÚNICO
+              <p className="text-xs text-[#5d4037] mb-6 font-semibold uppercase tracking-wider">
+                somente à vista no Pix
               </p>
 
               {/* Divider */}
@@ -702,6 +708,98 @@ export default function App() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleBasicClick}
+                className="inline-flex items-center justify-center gap-2 w-full font-black text-base sm:text-lg px-6 py-4.5 rounded-full shadow-lg transition-all duration-300 hover:scale-[1.02] cursor-pointer font-display uppercase tracking-wide bg-gradient-to-r from-[#E9B21C] to-[#d49f13] text-neutral-950 hover:from-[#d49f13] hover:to-[#b58509] shadow-[0_15px_35px_-5px_rgba(233,178,28,0.5)] ring-4 ring-[#E9B21C]/40 animate-pulse-cta"
+              >
+                ADQUIRIR ESSA OFERTA
+              </a>
+              <p className="mt-3 text-[11px] text-[#5d4037] font-bold">
+                ⚡ Acesso imediato após a confirmação do pagamento.
+              </p>
+            </div>
+          </div>
+
+          {/* Plano Premium */}
+          <div className="bg-white rounded-[2rem] p-6 sm:p-8 md:p-10 border-4 border-[#1e3a8a] shadow-[0_30px_80px_-30px_rgba(30,58,138,0.3)] flex flex-col justify-between text-center relative mt-5 transition-transform duration-300 hover:scale-[1.01]">
+            {/* Popular Badge */}
+            <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#e74c3c] text-white px-5 py-2 rounded-full font-black text-xs sm:text-sm shadow-lg whitespace-nowrap z-10 ring-4 ring-white animate-pulse tracking-wider">
+              ★ MAIS ESCOLHIDO
+            </span>
+
+            <div>
+              {/* Green Bonus Badge */}
+              <div className="flex justify-center mb-3.5 mt-2">
+                <span className="bg-[#0f9d58] text-white px-4 py-1.5 rounded-full font-black text-[10px] sm:text-xs tracking-wider uppercase flex items-center gap-1 shadow-sm">
+                  🎁 4 BÔNUS EXCLUSIVOS
+                </span>
+              </div>
+
+              <h3 className="text-xl sm:text-2xl font-black text-[#d35400] mb-2 font-display uppercase">
+                PLANO PREMIUM
+              </h3>
+              <p className="text-xs sm:text-sm text-[#1e3a8a] font-black uppercase tracking-wider mb-6 px-2">
+                A SOLUÇÃO DEFINITIVA PARA O SEU SÃO JOÃO + TODOS OS BÔNUS INCLUSOS
+              </p>
+
+              {/* Pricing */}
+              <div className="mb-1 text-sm text-[#5d4037] font-semibold">
+                <span className="line-through opacity-80">De R$ 97,00</span>
+              </div>
+              <div className="flex items-end justify-center gap-1 mb-1">
+                <span className="text-lg font-extrabold text-[#5d4037] mb-1.5 font-display">R$</span>
+                <span className="font-black leading-none tracking-tight font-display text-5xl sm:text-6xl text-[#e74c3c]">
+                  27,90
+                </span>
+              </div>
+              <p className="text-xs text-[#5d4037] mb-6 font-semibold uppercase tracking-wider">
+                somente à vista no Pix
+              </p>
+
+              {/* Divider */}
+              <div className="my-6 border-b border-[#f1c40f]/20"></div>
+
+              {/* Features List */}
+              <ul className="text-left text-sm text-[#2d1e15] space-y-3.5 max-w-xs mx-auto mb-8 font-semibold">
+                <li className="flex items-start gap-2.5 leading-snug">
+                  <span className="text-emerald-500 font-extrabold shrink-0">✅</span>
+                  <span className="text-sm">Mais de 70 materiais inclusos</span>
+                </li>
+                <li className="flex items-start gap-2.5 leading-snug">
+                  <span className="text-emerald-500 font-extrabold shrink-0">✅</span>
+                  <span className="text-sm">Brincadeiras e dinâmicas prontas</span>
+                </li>
+                <li className="flex items-start gap-2.5 leading-snug">
+                  <span className="text-emerald-500 font-extrabold shrink-0">✅</span>
+                  <span className="text-sm">Cartazes e painéis exclusivos</span>
+                </li>
+                <li className="flex items-start gap-2.5 leading-snug">
+                  <span className="text-emerald-500 font-extrabold shrink-0">✅</span>
+                  <span className="text-sm text-[#e74c3c]">Kit Correio Elegante Premium</span>
+                </li>
+                <li className="flex items-start gap-2.5 leading-snug">
+                  <span className="text-emerald-500 font-extrabold shrink-0">✅</span>
+                  <span className="text-sm text-[#e74c3c]">Kit Plaquinhas e Cartazes Juninos</span>
+                </li>
+                <li className="flex items-start gap-2.5 leading-snug">
+                  <span className="text-emerald-500 font-extrabold shrink-0">✅</span>
+                  <span className="text-sm text-[#e74c3c]">Kit Bingo Junino Completo</span>
+                </li>
+                <li className="flex items-start gap-2.5 leading-snug">
+                  <span className="text-emerald-500 font-extrabold shrink-0">✅</span>
+                  <span className="text-sm text-[#e74c3c]">Kit Desafios e Gincanas Juninas</span>
+                </li>
+                <li className="flex items-start gap-2.5 leading-snug">
+                  <span className="text-emerald-500 font-extrabold shrink-0">✅</span>
+                  <span className="text-sm text-[#0f9d58]">Todos os bônus inclusos</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              {/* CTA Button */}
+              <a 
+                href="https://pay.wiapy.com/F9vclZ4hQ-"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 w-full font-black text-base sm:text-lg px-6 py-4.5 rounded-full shadow-lg transition-all duration-300 hover:scale-[1.02] cursor-pointer font-display uppercase tracking-wide bg-gradient-to-r from-[#E9B21C] to-[#d49f13] text-neutral-950 hover:from-[#d49f13] hover:to-[#b58509] shadow-[0_15px_35px_-5px_rgba(233,178,28,0.5)] ring-4 ring-[#E9B21C]/40 animate-pulse-cta"
               >
                 ADQUIRIR ESSA OFERTA
