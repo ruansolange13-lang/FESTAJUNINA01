@@ -31,7 +31,7 @@ import UpsellModal from './components/UpsellModal';
 import VSLPlayer from './components/VSLPlayer';
 
 // Import local generated images
-import avatarProfessora from './assets/images/avatar_professora_1780095735123.webp';
+import avatarProfessora from './assets/images/avatar_professora_nova_uploaded.jpg';
 import mockupPremium from './assets/images/mockup_premium_1780095770029.webp';
 import seloGarantia from './assets/images/selo_garantia_7_dias_novo_gold.png';
 
@@ -720,11 +720,6 @@ export default function App() {
 
           {/* Plano Premium */}
           <div className="bg-white rounded-[2rem] p-6 sm:p-8 md:p-10 border-4 border-[#1e3a8a] shadow-[0_30px_80px_-30px_rgba(30,58,138,0.3)] flex flex-col justify-between text-center relative mt-5 transition-transform duration-300 hover:scale-[1.01]">
-            {/* Popular Badge */}
-            <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#e74c3c] text-white px-5 py-2 rounded-full font-black text-xs sm:text-sm shadow-lg whitespace-nowrap z-10 ring-4 ring-white animate-pulse tracking-wider">
-              ★ MAIS ESCOLHIDO
-            </span>
-
             <div>
               {/* Green Bonus Badge */}
               <div className="flex justify-center mb-3.5 mt-2">
