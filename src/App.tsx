@@ -33,7 +33,7 @@ import VSLPlayer from './components/VSLPlayer';
 // Import local generated images
 import avatarProfessora from './assets/images/avatar_professora_1780095735123.webp';
 import mockupPremium from './assets/images/mockup_premium_1780095770029.webp';
-import seloGarantia from './assets/images/selo_garantia_7_dias_1780557360039.webp';
+import seloGarantia from './assets/images/selo_garantia_7_dias_novo_gold.png';
 
 import testimonial1 from './assets/images/testimonial_1.webp';
 import testimonial2 from './assets/images/testimonial_2.webp';
