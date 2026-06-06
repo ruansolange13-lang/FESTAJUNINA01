@@ -678,7 +678,7 @@ export default function App() {
                 </span>
               </div>
               <p className="text-xs text-[#5d4037] mb-6 font-semibold uppercase tracking-wider">
-                somente à vista no Pix
+                Pagamento Único
               </p>
 
               {/* Divider */}
@@ -746,7 +746,7 @@ export default function App() {
                 </span>
               </div>
               <p className="text-xs text-[#5d4037] mb-6 font-semibold uppercase tracking-wider">
-                somente à vista no Pix
+                Pagamento Único
               </p>
 
               {/* Divider */}
