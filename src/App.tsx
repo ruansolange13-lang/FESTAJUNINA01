@@ -84,7 +84,7 @@ export default function App() {
       regularPrice: 'De R$ 97,00',
       currentPrice: '27,90',
       paymentDetails: 'PAGAMENTO ÚNICO',
-      checkoutUrl: 'https://pay.wiapy.com/F9vclZ4hQ-',
+      checkoutUrl: 'https://pay.lowify.com.br/checkout?product_id=Zk4EhD',
       isPopular: true,
       features: [
         { text: 'Manual & Dinâmica Completa do Jogo da Pescaria Infantil', included: true },
@@ -106,7 +106,7 @@ export default function App() {
       regularPrice: 'De R$ 47,90',
       currentPrice: '10,00',
       paymentDetails: 'PAGAMENTO ÚNICO',
-      checkoutUrl: 'https://pay.wiapy.com/4Ttcy-vBeM',
+      checkoutUrl: 'https://pay.lowify.com.br/checkout?product_id=gpCNrh',
       isPopular: false,
       features: [
         { text: 'Manual & Dinâmica Completa do Jogo da Pescaria Infantil', included: true },
@@ -704,7 +704,7 @@ export default function App() {
             <div>
               {/* CTA Button */}
               <a 
-                href="https://pay.wiapy.com/4Ttcy-vBeM"
+                href="https://pay.lowify.com.br/checkout?product_id=gpCNrh"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleBasicClick}
@@ -792,7 +792,7 @@ export default function App() {
             <div>
               {/* CTA Button */}
               <a 
-                href="https://pay.wiapy.com/F9vclZ4hQ-"
+                href="https://pay.lowify.com.br/checkout?product_id=Zk4EhD"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 w-full font-black text-base sm:text-lg px-6 py-4.5 rounded-full shadow-lg transition-all duration-300 hover:scale-[1.02] cursor-pointer font-display uppercase tracking-wide bg-gradient-to-r from-[#E9B21C] to-[#d49f13] text-neutral-950 hover:from-[#d49f13] hover:to-[#b58509] shadow-[0_15px_35px_-5px_rgba(233,178,28,0.5)] ring-4 ring-[#E9B21C]/40 animate-pulse-cta"
@@ -828,8 +828,8 @@ export default function App() {
           isOpen={isUpsellOpen}
           onClose={() => setIsUpsellOpen(false)}
           mockupPremium={mockupPremium}
-          basicCheckoutUrl="https://pay.wiapy.com/4Ttcy-vBeM"
-          promoCheckoutUrl="https://pay.wiapy.com/3U-q-8WSel"
+          basicCheckoutUrl="https://pay.lowify.com.br/checkout?product_id=gpCNrh"
+          promoCheckoutUrl="https://pay.lowify.com.br/checkout?product_id=2YsNLP"
         />
 
 
