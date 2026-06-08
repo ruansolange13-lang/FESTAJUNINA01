@@ -32,7 +32,7 @@ import VSLPlayer from './components/VSLPlayer';
 
 // Import local generated images
 import avatarProfessora from './assets/images/avatar_professora_nova_uploaded.jpg';
-import mockupPremium from './assets/images/mockup_premium_1780095770029.webp';
+import mockupPremium from './assets/images/mockup_premium_novo_upload.jpg';
 import seloGarantia from './assets/images/selo_garantia_7_dias_novo_gold.png';
 
 import testimonial1 from './assets/images/testimonial_1.webp';
@@ -734,6 +734,18 @@ export default function App() {
               <p className="text-xs sm:text-sm text-[#1e3a8a] font-black uppercase tracking-wider mb-6 px-2">
                 A SOLUÇÃO DEFINITIVA PARA O SEU SÃO JOÃO + TODOS OS BÔNUS INCLUSOS
               </p>
+
+              {/* Mockup image */}
+              <div className="relative mb-6 select-none flex justify-center">
+                <img 
+                  src={mockupPremium} 
+                  alt="Kit Arraiá Premiado Completo" 
+                  loading="lazy"
+                  width={240}
+                  height={240}
+                  className="w-48 sm:w-56 md:w-60 h-44 sm:h-52 object-contain drop-shadow-xl transition-transform duration-500 hover:scale-[1.04]"
+                />
+              </div>
 
               {/* Pricing */}
               <div className="mb-1 text-sm text-[#5d4037] font-semibold">

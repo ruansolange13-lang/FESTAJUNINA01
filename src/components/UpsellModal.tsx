@@ -36,7 +36,7 @@ export default function UpsellModal({
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.98, y: 15 }}
             transition={{ type: 'spring', stiffness: 400, damping: 28 }}
-            className="relative bg-white w-full max-w-[340px] rounded-[2rem] overflow-hidden shadow-2xl border border-neutral-100 z-10 p-5 flex flex-col text-center"
+            className="relative bg-white w-full max-w-[340px] rounded-[2rem] overflow-hidden shadow-2xl border-4 border-[#E9B21C] z-10 p-5 flex flex-col text-center"
           >
             {/* Direct Close Button in the corner */}
             <button 
