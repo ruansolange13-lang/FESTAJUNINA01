@@ -55,9 +55,36 @@ export default function App() {
   const [formattedDate, setFormattedDate] = useState<string>('');
   const [isUpsellOpen, setIsUpsellOpen] = useState(false);
 
+  const trackInitiateCheckout = () => {
+    try {
+      console.log('Antigravity Tracker: Disparando evento InitiateCheckout');
+      if (typeof window !== 'undefined') {
+        // Meta Pixel (fbq)
+        if (typeof (window as any).fbq === 'function') {
+          (window as any).fbq('track', 'InitiateCheckout');
+        }
+        // TikTok Pixel (ttq)
+        if (typeof (window as any).ttq?.track === 'function') {
+          (window as any).ttq.track('InitiateCheckout');
+        }
+        // UTMify manual tracker
+        if (typeof (window as any)._utmify === 'function') {
+          (window as any)._utmify('track', 'InitiateCheckout');
+        }
+      }
+    } catch (err) {
+      console.error('Tracking error:', err);
+    }
+  };
+
   const handleBasicClick = (e: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>) => {
     e.preventDefault();
+    trackInitiateCheckout();
     setIsUpsellOpen(true);
+  };
+
+  const handlePremiumClick = () => {
+    trackInitiateCheckout();
   };
 
   useEffect(() => {
@@ -807,6 +834,7 @@ export default function App() {
                 href="https://pay.lowify.com.br/checkout?product_id=Zk4EhD"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={handlePremiumClick}
                 className="inline-flex items-center justify-center gap-2 w-full font-black text-base sm:text-lg px-6 py-4.5 rounded-full shadow-lg transition-all duration-300 hover:scale-[1.02] cursor-pointer font-display uppercase tracking-wide bg-gradient-to-r from-[#E9B21C] to-[#d49f13] text-neutral-950 hover:from-[#d49f13] hover:to-[#b58509] shadow-[0_15px_35px_-5px_rgba(233,178,28,0.5)] ring-4 ring-[#E9B21C]/40 animate-pulse-cta"
               >
                 ADQUIRIR ESSA OFERTA
