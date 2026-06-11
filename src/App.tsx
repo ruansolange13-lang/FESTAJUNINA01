@@ -83,8 +83,11 @@ export default function App() {
     setIsUpsellOpen(true);
   };
 
-  const handlePremiumClick = () => {
+  const handlePremiumClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
     trackInitiateCheckout();
+    const targetUrl = e.currentTarget.href;
+    window.open(targetUrl, '_blank', 'noopener,noreferrer');
   };
 
   useEffect(() => {
