@@ -67,47 +67,21 @@
     <link rel="dns-prefetch" href="https://cdn.utmify.com.br" />
     <link rel="dns-prefetch" href="https://i.postimg.cc" />
     <script>
-      window.pixelId = "6a1bfa9393b5d9e2818a7ffc";
-      
-      // Dynamic Lazy Loader for tracking scripts to prevent main thread blocking on initial render
-      function loadTrackingPlusPixel() {
-        if (window.trackingScriptsInitiated) return;
-        window.trackingScriptsInitiated = true;
-
-        // Cleanup event listeners
-        window.removeEventListener('scroll', loadTrackingPlusPixel);
-        window.removeEventListener('click', loadTrackingPlusPixel);
-        window.removeEventListener('touchstart', loadTrackingPlusPixel);
-        window.removeEventListener('mousemove', loadTrackingPlusPixel);
-
-        // Append UTMify Pixel script
-        var a = document.createElement("script");
-        a.async = true;
-        a.defer = true;
-        a.src = "https://cdn.utmify.com.br/scripts/pixel/pixel.js";
-        document.head.appendChild(a);
-
-        // Append UTMs script
-        var b = document.createElement("script");
-        b.async = true;
-        b.defer = true;
-        b.src = "https://cdn.utmify.com.br/scripts/utms/latest.js";
-        b.setAttribute("data-utmify-prevent-xcod-sck", "");
-        b.setAttribute("data-utmify-prevent-subids", "");
-        b.setAttribute("data-utmify-ignore-retry", "");
-        b.setAttribute("data-utmify-ignore-iframe", "");
-        document.head.appendChild(b);
-      }
-
-      // Trigger on first user interaction for super high PageSpeed scores
-      window.addEventListener('scroll', loadTrackingPlusPixel, { passive: true });
-      window.addEventListener('click', loadTrackingPlusPixel, { passive: true });
-      window.addEventListener('touchstart', loadTrackingPlusPixel, { passive: true });
-      window.addEventListener('mousemove', loadTrackingPlusPixel, { passive: true });
-
-      // Fallback: load after 3.8 seconds if no interaction represents a slow reading user
-      setTimeout(loadTrackingPlusPixel, 3800);
+      window.pixelId = "6a2a2e38bb26cef28275e98a";
+      var a = document.createElement("script");
+      a.setAttribute("async", "");
+      a.setAttribute("defer", "");
+      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+      document.head.appendChild(a);
     </script>
+
+    <script
+      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+      data-utmify-prevent-xcod-sck
+      data-utmify-prevent-subids
+      async
+      defer
+    ></script>
   </head>
   <body>
     <div id="root"></div>
