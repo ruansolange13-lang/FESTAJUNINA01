@@ -31,9 +31,9 @@ import UpsellModal from './components/UpsellModal';
 import VSLPlayer from './components/VSLPlayer';
 
 // Import local generated images
-import avatarProfessora from './assets/images/avatar_professora_nova_uploaded.jpg';
-import mockupPremium from './assets/images/mockup_premium_novo_upload.jpg';
-import seloGarantia from './assets/images/selo_garantia_7_dias_novo_gold.png';
+import avatarProfessora from './assets/images/avatar_professora_nova_uploaded.webp';
+import mockupPremium from './assets/images/mockup_premium_novo_upload.webp';
+import seloGarantia from './assets/images/selo_garantia_7_dias_novo_gold.webp';
 
 import testimonial1 from './assets/images/testimonial_1.webp';
 import testimonial2 from './assets/images/testimonial_2.webp';
